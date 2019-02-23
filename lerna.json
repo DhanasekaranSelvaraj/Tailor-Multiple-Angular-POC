@@ -1,0 +1,7 @@
+{
+  "lerna": "2.5.1",
+  "packages": [
+    "child-apps/*"
+  ],
+  "version": "0.0.0"
+}

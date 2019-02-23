@@ -1,0 +1,22 @@
+{
+  "name": "tailor-multiple-angular-poc",
+  "version": "1.0.0",
+  "description": "tailor-multiple-angular-poc",
+  "scripts": {
+    "start": "node tailor.js",
+    "install-fragment-dependencies": "lerna bootstrap",
+    "start-fragments": "lerna run --parallel start",
+    "watch-fragments": "lerna run --parallel watch"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.11.0",
+    "eslint-import-resolver-webpack": "^0.8.3",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1",
+    "lerna": "^2.5.1",
+    "localStorage": "1.0.4",
+    "node-tailor": "^3.8.0",
+    "webpack": "^3.8.1"
+  }
+}
