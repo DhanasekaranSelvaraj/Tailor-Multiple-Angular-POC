@@ -20,7 +20,8 @@ module.exports = function (env, argv) {
   return {
     entry: {
       main: "./src/main.ts",
-      polyfills: "./src/polyfills.ts"
+      polyfills: "./src/polyfills.ts",
+      styles: "./src/styles.scss"
     },
 
     target: "web",
@@ -114,7 +115,8 @@ module.exports = function (env, argv) {
         output: 'index.html',
         entrypoints: [
           'polyfills',
-          'main'
+          'main',
+          'styles'
         ]
       })
     ]

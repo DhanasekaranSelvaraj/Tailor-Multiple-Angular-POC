@@ -4,7 +4,6 @@
   "description": "tailor-multiple-angular-poc",
   "scripts": {
     "start": "node tailor.js",
-    "install-fragment-dependencies": "lerna bootstrap",
     "start-fragments": "lerna run --parallel start",
     "watch-fragments": "lerna run --parallel watch"
   },

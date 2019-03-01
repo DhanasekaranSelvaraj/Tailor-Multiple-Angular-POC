@@ -1,9 +1,9 @@
-const webpack = require("webpack");
+// const webpack = require("webpack");
 const ngcWebpack = require("ngc-webpack");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const webpackBundleAnalyzer = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+// const webpackBundleAnalyzer = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const { IndexHtmlWebpackPlugin } = require('@angular-devkit/build-angular/src/angular-cli-files/plugins/index-html-webpack-plugin');
 
 

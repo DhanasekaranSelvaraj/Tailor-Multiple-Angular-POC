@@ -2,6 +2,8 @@
   "name": "app-two-angular-v7",
   "version": "0.0.0",
   "scripts": {
+    "dev:ng": "ng serve --port 6400",
+    "build:ng": "ng build",
     "start": "node fragment.js",
     "dev:webpack": "webpack-dev-server --mode development --port 6400",
     "build:webpack": "rimraf dist && webpack --config webpack.config.js --env=prod --mode production"

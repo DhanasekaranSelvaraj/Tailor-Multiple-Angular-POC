@@ -6,7 +6,7 @@ const url = require('url'); // built-in utility
 const Tailor = require('node-tailor')
 const tailor = new Tailor({
   maxAssetLinks: 15,
-  templatesPath: __dirname + '/templates'   
+  templatesPath: __dirname   
 })
 
 
@@ -28,6 +28,6 @@ http
     tailor.requestHandler(req, res)
 
   })
-  .listen(8080, function () {
-    console.log('Tailor server listening on port 8080')
+  .listen(9090, function () {
+    console.log('Tailor server listening on port 9090')
   })
