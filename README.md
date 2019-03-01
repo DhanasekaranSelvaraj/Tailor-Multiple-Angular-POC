@@ -13,9 +13,9 @@ This project is just to demonstrate microfront end architecture using [Tailor](h
 1. Clone the project from [Tailor Multiple Angular POC](https://github.com/DhanasekaranSelvaraj/Tailor-Multiple-Angular-POC)
 2. Run `npm install` in main folder.
 3. Go to child-apps folder and run `npm install` inside each angular apps
-4. Come back to main portal folder and run below commands in different terminals
-    a. `npm run start` - It will start the main application in `http://localhost:9090`
-    b. `npm run start-fragments` - It will start individual applications as fragments in `http://localhost:5050`,`http://localhost:5051`,`http://localhost:5052`,`http://localhost:5053` respectively
+4. Come back to main portal folder and run below commands in different terminals.
+    1. `npm run start` - It will start the main application in `http://localhost:9090`
+    2. `npm run start-fragments` - It will start individual applications as fragments in `http://localhost:5050`,`http://localhost:5051`,`http://localhost:5052`,`http://localhost:5053` respectively
 
 **Known Issues:**
 1. Unable to render two individual angular applications with same versions(*ng build*) in a same window because of some global scope conflicts (It loads only one application which loads first)
