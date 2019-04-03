@@ -76,6 +76,19 @@ function buildLinkHeader() {
     }
 }
 
+function buildIndexHTML() {
+    if (fs.existsSync(FULL_DIST_PATH)) {
+        let html = fs.readFileSync(FULL_DIST_PATH + "/index.html").toString();
+        if (!DEV_MODE) {
+            ///TODO: remove script tags from html if they are in place
+        }
+        return html;
+
+    }
+}
+
+const HTML = buildIndexHTML();
+
 
 const LINK = buildLinkHeader();
 

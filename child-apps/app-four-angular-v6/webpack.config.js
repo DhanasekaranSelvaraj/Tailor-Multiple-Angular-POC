@@ -27,6 +27,7 @@ module.exports = function (env, argv) {
     devtool: false,
 
     output: {
+      library: 'appFourAngularV6',
       path: getRoot("dist"),
       publicPath: env==='prod' ? 'http://localhost:5053/dist/': '/',
       filename: "[name].js"

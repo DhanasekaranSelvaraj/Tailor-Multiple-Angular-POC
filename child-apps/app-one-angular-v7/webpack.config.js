@@ -28,6 +28,7 @@ module.exports = function (env, argv) {
     devtool: false,
 
     output: {
+      library: 'appOneAngularV7',
       path: getRoot("dist"),
       publicPath: env==='prod' ? 'http://localhost:5050/dist/': '/',
       filename: "[name].js"

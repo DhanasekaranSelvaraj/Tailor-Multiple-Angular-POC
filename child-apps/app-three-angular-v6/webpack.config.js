@@ -17,16 +17,23 @@ function getRoot(args) {
 }
 
 module.exports = function (env, argv) {
+  const envKeys = env === 'prod' ? {
+    'process.env.production': true
+  } : {
+    'process.env.production': true
+  };
   return {
     entry: {
       main: "./src/main.ts",
-      polyfills: "./src/polyfills.ts"
+      polyfills: "./src/polyfills.ts",
+      styles: "./src/styles.scss"
     },
 
     target: "web",
     devtool: false,
 
     output: {
+      library: 'appThreeAngularV6',
       path: getRoot("dist"),
       publicPath: env==='prod' ? 'http://localhost:5052/dist/': '/',
       filename: "[name].js"
@@ -90,6 +97,7 @@ module.exports = function (env, argv) {
     },
     plugins: [
       new UglifyJsPlugin(),
+      new webpack.DefinePlugin(envKeys),
 
       new ngcWebpack.NgcWebpackPlugin({
         tsConfigPath: "./tsconfig.json",
@@ -114,7 +122,8 @@ module.exports = function (env, argv) {
         output: 'index.html',
         entrypoints: [
           'polyfills',
-          'main'
+          'main',
+          'styles'
         ]
       })
     ]

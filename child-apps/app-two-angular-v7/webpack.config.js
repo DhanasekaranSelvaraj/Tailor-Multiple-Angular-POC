@@ -27,6 +27,7 @@ module.exports = function (env, argv) {
     devtool: false,
 
     output: {
+      library: 'appTwoAngularV7',
       path: getRoot("dist"),
       publicPath: env==='prod' ? 'http://localhost:5051/dist/': '/',
       filename: "[name].js"
